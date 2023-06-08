@@ -134,6 +134,9 @@ def main():
         elif "Open Quara".lower() in query.lower():
             say("Opening Sir...")
             webbrowser.open("https://es.quora.com/")
+        elif "open stackoverflow" in query.lower():
+            say("Opening Sir...")
+            webbrowser.open("https://stackoverflow.com/")
 
         # giving instructions to open calculator
         elif "open calculator" in query:
