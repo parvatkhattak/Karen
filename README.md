@@ -29,7 +29,7 @@ Before running the Karen chatbot, make sure you have the following:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/parvatkhattak/Karen.git
    cd your-repo
    ```
 
@@ -73,7 +73,7 @@ Karen is designed to be easily customizable and extendable. Here are some ways y
 ## CONTRIBUTION
 
 <p>Member-1: PARVAT KHATTAK</p>
-Member-2: SHUBHAM YADAV
+<p>Member-2: SHUBHAM YADAV</p>
 Member-3: SAI TEJA
 
 ## License
