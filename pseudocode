@@ -1,0 +1,61 @@
+# Import necessary modules
+import speech_recognition
+import win32com.client
+import webbrowser
+import os
+import datetime
+import openai
+from config import apikey
+import subprocess
+
+# Initialize a variable
+chatStr = ""
+
+# Define a function to perform conversation between user and system (Karen)
+def chat(query):
+    global chatStr
+    # Add user's input to chatStr
+    chatStr += f"User:{query}\n Karen: "
+    # Generate responses from OpenAI API based on chat history
+    response = openai.Completion.create(
+        model="text-davinci-003",
+        prompt=chatStr,
+        temperature=1,
+        max_tokens=256,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+    say(response["choices"][0]["text"])
+    chatStr += f"{response['choices'][0]['text']}\n"
+    return response["choices"][0]["text"]
+
+# Define a function to generate AI responses using OpenAI
+def ai(prompt):
+    # Same as above, with slight modifications
+
+# Define function to speak the given text using Microsoft Zira voice
+def say(text):
+    # Same as above, with slight modifications
+
+# Define a function to retrieve the voice object for the corresponding voice name
+def get_voice_by_name(name):
+    # Same as above, with slight modifications
+
+# Define a function that takes audio input from user and recognizes using Google's speech recognition
+def takeCommand():
+    # Same as above, with slight modifications
+
+# Main program logic
+def main():
+    # Program starts by speaking a greeting message
+    say("Hello, I am Karen. How can I help you?")
+    # Use an infinite loop to continuously listen for user input
+    while True:
+        # Take user query using takeCommand()
+        query = takeCommand()
+        # Perform various tasks based on user's query
+        # Same as above, with slight modifications
+
+# Call main function
+main()
