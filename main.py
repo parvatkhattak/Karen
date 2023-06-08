@@ -105,7 +105,7 @@ def takeCommand():
 
 def main():
     # program starts by speaking a greet message
-    say("Hello, I am Karen.How can I help you?")
+    say("Hello, I am Karen How can I help you?")
     # using an infinite loop to continuously listen for user input
     while True:
         print("Listening...")
