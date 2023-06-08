@@ -29,8 +29,7 @@ Before running the Karen chatbot, make sure you have the following:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/parvatkhattak/Karen
-   cd your-repo
+   https://github.com/parvatkhattak/Karen
    ```
 
 2. Install the required libraries:
